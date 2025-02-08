@@ -2,15 +2,17 @@
     "name": "ft1-server",
     "version": "0.1.0",
     "private": true,
+    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "bun run --watch src/index.ts"
+        "dev": "bun --env-file=.env run --watch src/index.ts"
     },
     "dependencies": {
         "@elysiajs/jwt": "^1.2.0",
         "@elysiajs/swagger": "^1.2.0",
         "@t3-oss/env-core": "^0.12.0",
-        "elysia": "latest"
+        "elysia": "latest",
+        "zod": "^3.24.1"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.9.4",
