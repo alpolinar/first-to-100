@@ -12,7 +12,7 @@ type PlayerType = {
 
 const rooms = new Map<string, PlayerType>();
 
-const gameRoute = new Elysia().ws("/room", {
+const ws = new Elysia().ws("/room", {
     query: t.Object({
         id: t.String(),
     }),
@@ -94,4 +94,4 @@ const gameRoute = new Elysia().ws("/room", {
     },
 });
 
-export default gameRoute;
+export default ws;
