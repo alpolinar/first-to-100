@@ -8,7 +8,7 @@ const app = new Elysia()
     .use(cors())
     .use(swagger({ path: "/docs" }))
     .group("/sub", (app) => app.use(ws))
-    .listen(env.PORT);
+    .listen(env.SERVER_PORT);
 
 console.log(
     `🦊 Server is running at ${app.server?.hostname}:${app.server?.port}`

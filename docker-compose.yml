@@ -17,6 +17,16 @@ services:
     volumes:
       - ft100-postgres:/var/lib/postgresql/data
 
+  ft100-server:
+    restart: always
+    image: ft100-server:dev
+    environment:
+      SERVER_PORT: ${SERVER_PORT}
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    networks:
+      - ft100-network
+
 volumes:
   ft100-postgres:
 

@@ -5,13 +5,15 @@
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "bun --env-file=.env run --watch src/index.ts"
+        "dev": "bun --env-file=.env run --watch src/index.ts",
+        "docker:build": "docker build -t ft100-server:dev . -f Dockerfile"
     },
     "dependencies": {
+        "@elysiajs/cors": "^1.2.0",
         "@elysiajs/jwt": "^1.2.0",
         "@elysiajs/swagger": "^1.2.0",
         "@t3-oss/env-core": "^0.12.0",
-        "elysia": "latest",
+        "elysia": "^1.2.0",
         "zod": "^3.24.1"
     },
     "devDependencies": {

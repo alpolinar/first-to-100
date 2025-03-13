@@ -3,7 +3,7 @@ import { z } from "zod";
 
 export const env = createEnv({
     server: {
-        PORT: z.string(),
+        SERVER_PORT: z.string(),
     },
     runtimeEnv: process.env,
 });

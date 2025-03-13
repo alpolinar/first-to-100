@@ -1,0 +1,15 @@
+node_modules
+dist
+lib
+*.log
+.git
+.gitignore
+.prettierrc.js
+CHANGELOG.md
+Dockerfile
+docker-compose.yml
+gitignore
+nest-cli.json
+README.md
+tsconifg.lib.tsbuildinfo
+.env
