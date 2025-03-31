@@ -1,28 +1,29 @@
 {
-  "name": "first-to-100",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@elysiajs/cors": "^1.2.0",
-    "biome": "^0.3.3",
-    "elysia": "^1.2.12",
-    "next": "15.1.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "name": "first-to-100",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@elysiajs/cors": "^1.2.0",
+        "biome": "^0.3.3",
+        "elysia": "^1.2.12",
+        "next": "15.1.6",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "ws": "^8.18.1"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.9.4",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
