@@ -1,8 +1,8 @@
 import { cors } from "@elysiajs/cors";
 import { swagger } from "@elysiajs/swagger";
 import { Elysia } from "elysia";
-import ws from "./ws";
 import { env } from "./env";
+import ws from "./ws";
 
 const app = new Elysia()
     .use(cors())

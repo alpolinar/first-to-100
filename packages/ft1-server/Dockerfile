@@ -20,7 +20,6 @@ RUN cd /temp/prod && bun install --production
 FROM base AS prerelease
 COPY --from=install /temp/dev/node_modules node_modules
 COPY ./src .
-RUN ls -al /usr/src/app
 
 # [optional] tests & build
 # ENV NODE_ENV=production
@@ -31,7 +30,6 @@ RUN ls -al /usr/src/app
 FROM base AS release
 COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /usr/src/app/ .
-RUN ls -al /usr/src/app
 
 # run the app
 USER bun
